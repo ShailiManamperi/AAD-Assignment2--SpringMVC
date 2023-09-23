@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group = 'lk.ijse.aad'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    /*Lombok.*/
+    implementation 'org.projectlombok:lombok:1.18.28'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    /*GSON.*/
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    /*MySQL Connector.*/
+    implementation 'com.mysql:mysql-connector-j:8.1.0'
+
+    /*Spring Web-MVC.*/
+    implementation 'org.springframework:spring-webmvc:5.3.22'
+
+    /*Spring Data JPA.*/
+    implementation 'org.springframework.data:spring-data-jpa:2.7.0'
+
+    /*Hibernate Entity Manager.*/
+    implementation 'org.hibernate:hibernate-entitymanager:5.6.1.Final'
+
+    /*ModelMapper.*/
+    implementation 'org.modelmapper:modelmapper:3.1.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
