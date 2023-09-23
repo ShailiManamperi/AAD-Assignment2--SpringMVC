@@ -26,7 +26,7 @@ public class JPAConfiguration {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/ProjectTechLeadManagement?createDatabaseIfNotExist=true");
+        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/ProjectManagement?createDatabaseIfNotExist=true");
         driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         driverManagerDataSource.setUsername("root");
         driverManagerDataSource.setPassword("1234");
