@@ -50,7 +50,7 @@ public class JPAConfiguration {
         LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
         bean.setJpaVendorAdapter(vendorAdapter);//vendorAdapter
         bean.setDataSource(dataSource);//connection
-        bean.setPackagesToScan("lk.ijse.gdse.assignment2springaad.entity");//Where to scan for entities.
+        bean.setPackagesToScan("lk.ijse.aad.Entity");//Where to scan for entities.
         return bean;
 
     }
