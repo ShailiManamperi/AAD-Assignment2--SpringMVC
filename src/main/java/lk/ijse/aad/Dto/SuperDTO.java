@@ -1,4 +1,4 @@
 package lk.ijse.aad.Dto;
 
-public interface SuperDto {
+public interface SuperDTO {
 }
