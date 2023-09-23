@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-//@EnableJpaRepositories(basePackages = "lk.ijse.gdse.assignment2springaad.repo")
+@EnableJpaRepositories(basePackages = "lk.ijse.aad.Repo")
 public class JPAConfiguration {
     public JPAConfiguration() {
         System.out.println("JPAConfiguration created!");
